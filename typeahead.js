@@ -3,6 +3,7 @@ const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb
 const cities= [];
 
 //fetches the data and converts it
+
 fetch(endpoint)
     .then(blob => blob.json())
     .then(data => cities.push(...data)) 
